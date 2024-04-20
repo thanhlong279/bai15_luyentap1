@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--//bai 1:-->
+<!--<button onclick="alertMessage()">Hiển thị: </button>-->
+<!--<script>-->
+<!--    function alertMessage(){-->
+<!--        alert("xin chao");-->
+<!--    }-->
+<!--</script>-->
+<!--//bai 2:-->
+<!--<p id="result"></p>-->
+<!--<script>-->
+<!--    function tang_Number(number){-->
+<!--        return number + 1;-->
+<!--    }-->
+<!--    let num =5;-->
+<!--    let so_tang = tang_Number(num);-->
+<!--    document.getElementById("result").innerText = "số tăng lên là : " + so_tang;-->
+<!--</script>-->
+<!--bai 3:-->
+<!--<script>-->
+<!--    function number(num_1,num_2){-->
+<!--        if(num_1 > num_2){-->
+<!--            alert("số thứ nhất lớn hơn số thứ 2.");-->
+<!--        }else{-->
+<!--            alert("tổng của 2 số là: " + sum);-->
+<!--            return (num_1 + num_2);-->
+<!--        }-->
+<!--    }-->
+<!--    let num1;-->
+<!--    let num2;-->
+<!--    do {-->
+<!--       num1 = +prompt("Nhập vào số thứ nhất: ");-->
+<!--        if (isNaN(num1)) {-->
+<!--            alert("Mời bạn nhập vào 1 số");-->
+<!--        }-->
+<!--    } while (isNaN(num1));-->
+<!--    do {-->
+<!--        num2 = +prompt("Nhập vào số thứ 2: ");-->
+<!--        if (isNaN(num2)) {-->
+<!--            alert("Mời bạn nhập vào 1 số: ");-->
+<!--        }-->
+<!--    } while (isNaN(num2));-->
+<!--    // let num1 = +prompt("nhập vào số thứ nhất: ");-->
+<!--    // let num2 = +prompt("nhập vào số thứ 2: ");-->
+<!--    let sum = number(num1, num2);-->
+<!--        alert("Tổng của hai tham số là: " + sum);-->
+<!--</script>-->
+<!--bai 4:-->
+<!--<script>-->
+<!--    function addNumbers() {-->
+<!--        firstNum = 4;-->
+<!--        secondNum = 8;-->
+<!--        result = firstNum + secondNum;-->
+<!--        return result;-->
+<!--    }-->
+<!--    result = 0;-->
+<!--    alert("Giá trị của biến result trước khi gọi hàm addNumbers là: " + result);-->
+<!--    result = addNumbers();-->
+<!--    alert("Giá trị của biến result sau khi gọi hàm addNumbers là: " + result);-->
+<!--</script>-->
+<!--bai 5:-->
+<script>
+    let stars = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let constellations = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    function check(str) {
+        let result = "Không tìm thấy sao";
+        for (let i = 0; i < stars.length; i++) {
+            if (str === stars[i]) {
+                if (i < constellations.length) {
+                    result = constellations[i];
+                    break;
+                } else {
+                    return result;
+                }
+            }
+        }
+        return result;
+    }
+
+    let str = prompt("Nhập tên ngôi sao:");
+    alert(check(str));
+</script>
+</body>
+</html>
